@@ -1,6 +1,6 @@
-namespace WebApplication1
+namespace WebApplication1.Dtos
 {
-    public class WeatherForecast
+    public class WeatherForecastDto
     {
         public DateOnly Date { get; set; }
 
@@ -9,5 +9,9 @@ namespace WebApplication1
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
         public string? Summary { get; set; }
+
+        public int responseCode { get; set; } = 0;
+
+        public string MessageResponse { get; set; } = string.Empty;
     }
 }
